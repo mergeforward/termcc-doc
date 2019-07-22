@@ -6,6 +6,16 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://devs.wiki/query/</loc>
+     <lastmod>2019-07-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://devs.wiki/run/</loc>
+     <lastmod>2019-07-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://devs.wiki/cc/</loc>
      <lastmod>2019-07-22</lastmod>
      <changefreq>daily</changefreq>

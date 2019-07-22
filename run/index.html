@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://devs.wiki/log/">
+        <link rel="canonical" href="https://devs.wiki/run/">
       
       
         <meta name="author" content="Makefile君/dameng">
@@ -40,7 +40,7 @@
     
     
       
-        <title>日志 - TermCC</title>
+        <title>在bash运行 - TermCC</title>
       
     
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                日志
+                在bash运行
               
             </span>
           
@@ -192,11 +192,18 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../run/" title="在bash运行" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="在bash运行" class="md-nav__link md-nav__link--active">
       在bash运行
     </a>
+    
   </li>
 
     
@@ -216,18 +223,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="日志" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../log/" title="日志" class="md-nav__link">
       日志
     </a>
-    
   </li>
 
     
@@ -244,18 +244,10 @@
               
                 
                 
-                  <h1>日志</h1>
+                  <h1>在bash运行</h1>
                 
-                <div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">termcc.helper.logger</span> <span class="kn">import</span> <span class="n">sample_default</span> <span class="k">as</span> <span class="n">setup_logger</span>
-<span class="kn">from</span> <span class="nn">logbook</span> <span class="kn">import</span> <span class="n">Logger</span>
-<span class="kn">from</span> <span class="nn">termcc.cc</span> <span class="kn">import</span> <span class="n">cc</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">setup_logger</span><span class="p">()</span>
-    <span class="n">log</span> <span class="o">=</span> <span class="n">Logger</span><span class="p">(</span><span class="s1">&#39;termcc&#39;</span><span class="p">)</span>
-    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">cc</span><span class="p">(</span><span class="s1">&#39;:green:hello&#39;</span><span class="p">))</span>
-    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">cc</span><span class="p">(</span><span class="s1">&#39;:blue:world&#39;</span><span class="p">)</span>
+                <p>运行</p>
+<div class="codehilite"><pre><span></span>termcc :green:hello:blue:world
 </pre></div>
                 
                   
@@ -269,9 +261,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://devs.wiki/log/";
+      this.page.url = "https://devs.wiki/run/";
       this.page.identifier =
-        "/log/";
+        "/run/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -293,7 +285,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../cc/" title="在python运行" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../query/" title="查询" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -302,11 +294,25 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                在python运行
+                查询
               </span>
             </div>
           </a>
         
+        
+          <a href="../cc/" title="在python运行" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                在python运行
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
